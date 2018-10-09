@@ -1,0 +1,1024 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<template encoding-version="1.2">
+    <description></description>
+    <groupId>50e163f2-0166-1000-0000-00006d5794e2</groupId>
+    <name>01_FTP</name>
+    <snippet>
+        <connections>
+            <id>429a0e9c-6d51-3297-0000-000000000000</id>
+            <parentGroupId>8aeae414-8380-347f-0000-000000000000</parentGroupId>
+            <backPressureDataSizeThreshold>1 GB</backPressureDataSizeThreshold>
+            <backPressureObjectThreshold>10000</backPressureObjectThreshold>
+            <destination>
+                <groupId>8aeae414-8380-347f-0000-000000000000</groupId>
+                <id>b4ee730b-349e-3c9a-0000-000000000000</id>
+                <type>PROCESSOR</type>
+            </destination>
+            <flowFileExpiration>0 sec</flowFileExpiration>
+            <labelIndex>1</labelIndex>
+            <name></name>
+            <selectedRelationships>success</selectedRelationships>
+            <source>
+                <groupId>8aeae414-8380-347f-0000-000000000000</groupId>
+                <id>117f64d6-4e2a-354e-0000-000000000000</id>
+                <type>PROCESSOR</type>
+            </source>
+            <zIndex>0</zIndex>
+        </connections>
+        <connections>
+            <id>60859d11-efdf-3783-0000-000000000000</id>
+            <parentGroupId>8aeae414-8380-347f-0000-000000000000</parentGroupId>
+            <backPressureDataSizeThreshold>1 GB</backPressureDataSizeThreshold>
+            <backPressureObjectThreshold>10000</backPressureObjectThreshold>
+            <destination>
+                <groupId>8aeae414-8380-347f-0000-000000000000</groupId>
+                <id>cdf13c7b-f08f-35d5-0000-000000000000</id>
+                <type>PROCESSOR</type>
+            </destination>
+            <flowFileExpiration>0 sec</flowFileExpiration>
+            <labelIndex>1</labelIndex>
+            <name></name>
+            <selectedRelationships>success</selectedRelationships>
+            <source>
+                <groupId>8aeae414-8380-347f-0000-000000000000</groupId>
+                <id>117f64d6-4e2a-354e-0000-000000000000</id>
+                <type>PROCESSOR</type>
+            </source>
+            <zIndex>0</zIndex>
+        </connections>
+        <connections>
+            <id>6b0f6a19-96ca-3756-0000-000000000000</id>
+            <parentGroupId>8aeae414-8380-347f-0000-000000000000</parentGroupId>
+            <backPressureDataSizeThreshold>1 GB</backPressureDataSizeThreshold>
+            <backPressureObjectThreshold>10000</backPressureObjectThreshold>
+            <destination>
+                <groupId>8aeae414-8380-347f-0000-000000000000</groupId>
+                <id>42baf105-4593-3345-0000-000000000000</id>
+                <type>PROCESSOR</type>
+            </destination>
+            <flowFileExpiration>0 sec</flowFileExpiration>
+            <labelIndex>1</labelIndex>
+            <name></name>
+            <selectedRelationships>success</selectedRelationships>
+            <source>
+                <groupId>8aeae414-8380-347f-0000-000000000000</groupId>
+                <id>117f64d6-4e2a-354e-0000-000000000000</id>
+                <type>PROCESSOR</type>
+            </source>
+            <zIndex>0</zIndex>
+        </connections>
+        <processors>
+            <id>117f64d6-4e2a-354e-0000-000000000000</id>
+            <parentGroupId>8aeae414-8380-347f-0000-000000000000</parentGroupId>
+            <position>
+                <x>0.0</x>
+                <y>0.0</y>
+            </position>
+            <bundle>
+                <artifact>nifi-standard-nar</artifact>
+                <group>org.apache.nifi</group>
+                <version>1.7.0.3.2.0.0-520</version>
+            </bundle>
+            <config>
+                <bulletinLevel>WARN</bulletinLevel>
+                <comments></comments>
+                <concurrentlySchedulableTaskCount>1</concurrentlySchedulableTaskCount>
+                <descriptors>
+                    <entry>
+                        <key>Hostname</key>
+                        <value>
+                            <name>Hostname</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>Port</key>
+                        <value>
+                            <name>Port</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>Username</key>
+                        <value>
+                            <name>Username</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>Password</key>
+                        <value>
+                            <name>Password</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>Connection Mode</key>
+                        <value>
+                            <name>Connection Mode</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>Transfer Mode</key>
+                        <value>
+                            <name>Transfer Mode</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>Remote Path</key>
+                        <value>
+                            <name>Remote Path</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>File Filter Regex</key>
+                        <value>
+                            <name>File Filter Regex</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>Path Filter Regex</key>
+                        <value>
+                            <name>Path Filter Regex</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>Polling Interval</key>
+                        <value>
+                            <name>Polling Interval</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>Search Recursively</key>
+                        <value>
+                            <name>Search Recursively</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>Ignore Dotted Files</key>
+                        <value>
+                            <name>Ignore Dotted Files</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>Delete Original</key>
+                        <value>
+                            <name>Delete Original</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>Connection Timeout</key>
+                        <value>
+                            <name>Connection Timeout</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>Data Timeout</key>
+                        <value>
+                            <name>Data Timeout</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>Max Selects</key>
+                        <value>
+                            <name>Max Selects</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>Remote Poll Batch Size</key>
+                        <value>
+                            <name>Remote Poll Batch Size</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>Use Natural Ordering</key>
+                        <value>
+                            <name>Use Natural Ordering</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>proxy-configuration-service</key>
+                        <value>
+                            <identifiesControllerService>org.apache.nifi.proxy.ProxyConfigurationService</identifiesControllerService>
+                            <name>proxy-configuration-service</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>Proxy Type</key>
+                        <value>
+                            <name>Proxy Type</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>Proxy Host</key>
+                        <value>
+                            <name>Proxy Host</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>Proxy Port</key>
+                        <value>
+                            <name>Proxy Port</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>Http Proxy Username</key>
+                        <value>
+                            <name>Http Proxy Username</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>Http Proxy Password</key>
+                        <value>
+                            <name>Http Proxy Password</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>Internal Buffer Size</key>
+                        <value>
+                            <name>Internal Buffer Size</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>ftp-use-utf8</key>
+                        <value>
+                            <name>ftp-use-utf8</name>
+                        </value>
+                    </entry>
+                </descriptors>
+                <executionNode>PRIMARY</executionNode>
+                <lossTolerant>false</lossTolerant>
+                <penaltyDuration>30 sec</penaltyDuration>
+                <properties>
+                    <entry>
+                        <key>Hostname</key>
+                        <value>ftp.gmoserver.jp</value>
+                    </entry>
+                    <entry>
+                        <key>Port</key>
+                        <value>21</value>
+                    </entry>
+                    <entry>
+                        <key>Username</key>
+                        <value>sd0068552.09@gmoserver.jp</value>
+                    </entry>
+                    <entry>
+                        <key>Password</key>
+                    </entry>
+                    <entry>
+                        <key>Connection Mode</key>
+                        <value>Passive</value>
+                    </entry>
+                    <entry>
+                        <key>Transfer Mode</key>
+                        <value>Binary</value>
+                    </entry>
+                    <entry>
+                        <key>Remote Path</key>
+                        <value>/test01/</value>
+                    </entry>
+                    <entry>
+                        <key>File Filter Regex</key>
+                    </entry>
+                    <entry>
+                        <key>Path Filter Regex</key>
+                    </entry>
+                    <entry>
+                        <key>Polling Interval</key>
+                        <value>60 sec</value>
+                    </entry>
+                    <entry>
+                        <key>Search Recursively</key>
+                        <value>false</value>
+                    </entry>
+                    <entry>
+                        <key>Ignore Dotted Files</key>
+                        <value>true</value>
+                    </entry>
+                    <entry>
+                        <key>Delete Original</key>
+                        <value>true</value>
+                    </entry>
+                    <entry>
+                        <key>Connection Timeout</key>
+                        <value>30 sec</value>
+                    </entry>
+                    <entry>
+                        <key>Data Timeout</key>
+                        <value>30 sec</value>
+                    </entry>
+                    <entry>
+                        <key>Max Selects</key>
+                        <value>100</value>
+                    </entry>
+                    <entry>
+                        <key>Remote Poll Batch Size</key>
+                        <value>5000</value>
+                    </entry>
+                    <entry>
+                        <key>Use Natural Ordering</key>
+                        <value>false</value>
+                    </entry>
+                    <entry>
+                        <key>proxy-configuration-service</key>
+                    </entry>
+                    <entry>
+                        <key>Proxy Type</key>
+                        <value>DIRECT</value>
+                    </entry>
+                    <entry>
+                        <key>Proxy Host</key>
+                    </entry>
+                    <entry>
+                        <key>Proxy Port</key>
+                    </entry>
+                    <entry>
+                        <key>Http Proxy Username</key>
+                    </entry>
+                    <entry>
+                        <key>Http Proxy Password</key>
+                    </entry>
+                    <entry>
+                        <key>Internal Buffer Size</key>
+                        <value>16KB</value>
+                    </entry>
+                    <entry>
+                        <key>ftp-use-utf8</key>
+                        <value>false</value>
+                    </entry>
+                </properties>
+                <runDurationMillis>0</runDurationMillis>
+                <schedulingPeriod>5 sec</schedulingPeriod>
+                <schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
+                <yieldDuration>1 sec</yieldDuration>
+            </config>
+            <executionNodeRestricted>false</executionNodeRestricted>
+            <name>GetFTP</name>
+            <relationships>
+                <autoTerminate>false</autoTerminate>
+                <name>success</name>
+            </relationships>
+            <state>STOPPED</state>
+            <style/>
+            <type>org.apache.nifi.processors.standard.GetFTP</type>
+        </processors>
+        <processors>
+            <id>42baf105-4593-3345-0000-000000000000</id>
+            <parentGroupId>8aeae414-8380-347f-0000-000000000000</parentGroupId>
+            <position>
+                <x>777.3647765298981</x>
+                <y>5.004240264692328</y>
+            </position>
+            <bundle>
+                <artifact>nifi-standard-nar</artifact>
+                <group>org.apache.nifi</group>
+                <version>1.7.0.3.2.0.0-520</version>
+            </bundle>
+            <config>
+                <bulletinLevel>WARN</bulletinLevel>
+                <comments></comments>
+                <concurrentlySchedulableTaskCount>1</concurrentlySchedulableTaskCount>
+                <descriptors>
+                    <entry>
+                        <key>Directory</key>
+                        <value>
+                            <name>Directory</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>Conflict Resolution Strategy</key>
+                        <value>
+                            <name>Conflict Resolution Strategy</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>Create Missing Directories</key>
+                        <value>
+                            <name>Create Missing Directories</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>Maximum File Count</key>
+                        <value>
+                            <name>Maximum File Count</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>Last Modified Time</key>
+                        <value>
+                            <name>Last Modified Time</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>Permissions</key>
+                        <value>
+                            <name>Permissions</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>Owner</key>
+                        <value>
+                            <name>Owner</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>Group</key>
+                        <value>
+                            <name>Group</name>
+                        </value>
+                    </entry>
+                </descriptors>
+                <executionNode>ALL</executionNode>
+                <lossTolerant>false</lossTolerant>
+                <penaltyDuration>30 sec</penaltyDuration>
+                <properties>
+                    <entry>
+                        <key>Directory</key>
+                        <value>/tmp/nifi_test01</value>
+                    </entry>
+                    <entry>
+                        <key>Conflict Resolution Strategy</key>
+                        <value>replace</value>
+                    </entry>
+                    <entry>
+                        <key>Create Missing Directories</key>
+                        <value>true</value>
+                    </entry>
+                    <entry>
+                        <key>Maximum File Count</key>
+                    </entry>
+                    <entry>
+                        <key>Last Modified Time</key>
+                    </entry>
+                    <entry>
+                        <key>Permissions</key>
+                    </entry>
+                    <entry>
+                        <key>Owner</key>
+                    </entry>
+                    <entry>
+                        <key>Group</key>
+                    </entry>
+                </properties>
+                <runDurationMillis>0</runDurationMillis>
+                <schedulingPeriod>0 sec</schedulingPeriod>
+                <schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
+                <yieldDuration>1 sec</yieldDuration>
+            </config>
+            <executionNodeRestricted>false</executionNodeRestricted>
+            <name>PutFile</name>
+            <relationships>
+                <autoTerminate>true</autoTerminate>
+                <name>failure</name>
+            </relationships>
+            <relationships>
+                <autoTerminate>true</autoTerminate>
+                <name>success</name>
+            </relationships>
+            <state>RUNNING</state>
+            <style/>
+            <type>org.apache.nifi.processors.standard.PutFile</type>
+        </processors>
+        <processors>
+            <id>b4ee730b-349e-3c9a-0000-000000000000</id>
+            <parentGroupId>8aeae414-8380-347f-0000-000000000000</parentGroupId>
+            <position>
+                <x>776.6549324775438</x>
+                <y>514.5829085074162</y>
+            </position>
+            <bundle>
+                <artifact>nifi-aws-nar</artifact>
+                <group>org.apache.nifi</group>
+                <version>1.7.0.3.2.0.0-520</version>
+            </bundle>
+            <config>
+                <bulletinLevel>WARN</bulletinLevel>
+                <comments></comments>
+                <concurrentlySchedulableTaskCount>1</concurrentlySchedulableTaskCount>
+                <descriptors>
+                    <entry>
+                        <key>Object Key</key>
+                        <value>
+                            <name>Object Key</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>Bucket</key>
+                        <value>
+                            <name>Bucket</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>Content Type</key>
+                        <value>
+                            <name>Content Type</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>Access Key</key>
+                        <value>
+                            <name>Access Key</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>Secret Key</key>
+                        <value>
+                            <name>Secret Key</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>Credentials File</key>
+                        <value>
+                            <name>Credentials File</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>AWS Credentials Provider service</key>
+                        <value>
+                            <identifiesControllerService>org.apache.nifi.processors.aws.credentials.provider.service.AWSCredentialsProviderService</identifiesControllerService>
+                            <name>AWS Credentials Provider service</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>s3-object-tags-prefix</key>
+                        <value>
+                            <name>s3-object-tags-prefix</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>s3-object-remove-tags-prefix</key>
+                        <value>
+                            <name>s3-object-remove-tags-prefix</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>Storage Class</key>
+                        <value>
+                            <name>Storage Class</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>Region</key>
+                        <value>
+                            <name>Region</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>Communications Timeout</key>
+                        <value>
+                            <name>Communications Timeout</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>Expiration Time Rule</key>
+                        <value>
+                            <name>Expiration Time Rule</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>FullControl User List</key>
+                        <value>
+                            <name>FullControl User List</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>Read Permission User List</key>
+                        <value>
+                            <name>Read Permission User List</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>Write Permission User List</key>
+                        <value>
+                            <name>Write Permission User List</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>Read ACL User List</key>
+                        <value>
+                            <name>Read ACL User List</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>Write ACL User List</key>
+                        <value>
+                            <name>Write ACL User List</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>Owner</key>
+                        <value>
+                            <name>Owner</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>canned-acl</key>
+                        <value>
+                            <name>canned-acl</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>SSL Context Service</key>
+                        <value>
+                            <identifiesControllerService>org.apache.nifi.ssl.SSLContextService</identifiesControllerService>
+                            <name>SSL Context Service</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>Endpoint Override URL</key>
+                        <value>
+                            <name>Endpoint Override URL</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>Signer Override</key>
+                        <value>
+                            <name>Signer Override</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>Multipart Threshold</key>
+                        <value>
+                            <name>Multipart Threshold</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>Multipart Part Size</key>
+                        <value>
+                            <name>Multipart Part Size</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>Multipart Upload AgeOff Interval</key>
+                        <value>
+                            <name>Multipart Upload AgeOff Interval</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>Multipart Upload Max Age Threshold</key>
+                        <value>
+                            <name>Multipart Upload Max Age Threshold</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>server-side-encryption</key>
+                        <value>
+                            <name>server-side-encryption</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>proxy-configuration-service</key>
+                        <value>
+                            <identifiesControllerService>org.apache.nifi.proxy.ProxyConfigurationService</identifiesControllerService>
+                            <name>proxy-configuration-service</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>Proxy Host</key>
+                        <value>
+                            <name>Proxy Host</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>Proxy Host Port</key>
+                        <value>
+                            <name>Proxy Host Port</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>proxy-user-name</key>
+                        <value>
+                            <name>proxy-user-name</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>proxy-user-password</key>
+                        <value>
+                            <name>proxy-user-password</name>
+                        </value>
+                    </entry>
+                </descriptors>
+                <executionNode>ALL</executionNode>
+                <lossTolerant>false</lossTolerant>
+                <penaltyDuration>30 sec</penaltyDuration>
+                <properties>
+                    <entry>
+                        <key>Object Key</key>
+                        <value>${filename}</value>
+                    </entry>
+                    <entry>
+                        <key>Bucket</key>
+                        <value>hands-on-201810/test01</value>
+                    </entry>
+                    <entry>
+                        <key>Content Type</key>
+                    </entry>
+                    <entry>
+                        <key>Access Key</key>
+                    </entry>
+                    <entry>
+                        <key>Secret Key</key>
+                    </entry>
+                    <entry>
+                        <key>Credentials File</key>
+                    </entry>
+                    <entry>
+                        <key>AWS Credentials Provider service</key>
+                    </entry>
+                    <entry>
+                        <key>s3-object-tags-prefix</key>
+                    </entry>
+                    <entry>
+                        <key>s3-object-remove-tags-prefix</key>
+                        <value>false</value>
+                    </entry>
+                    <entry>
+                        <key>Storage Class</key>
+                        <value>Standard</value>
+                    </entry>
+                    <entry>
+                        <key>Region</key>
+                        <value>us-east-1</value>
+                    </entry>
+                    <entry>
+                        <key>Communications Timeout</key>
+                        <value>30 secs</value>
+                    </entry>
+                    <entry>
+                        <key>Expiration Time Rule</key>
+                    </entry>
+                    <entry>
+                        <key>FullControl User List</key>
+                        <value>${s3.permissions.full.users}</value>
+                    </entry>
+                    <entry>
+                        <key>Read Permission User List</key>
+                        <value>${s3.permissions.read.users}</value>
+                    </entry>
+                    <entry>
+                        <key>Write Permission User List</key>
+                        <value>${s3.permissions.write.users}</value>
+                    </entry>
+                    <entry>
+                        <key>Read ACL User List</key>
+                        <value>${s3.permissions.readacl.users}</value>
+                    </entry>
+                    <entry>
+                        <key>Write ACL User List</key>
+                        <value>${s3.permissions.writeacl.users}</value>
+                    </entry>
+                    <entry>
+                        <key>Owner</key>
+                        <value>${s3.owner}</value>
+                    </entry>
+                    <entry>
+                        <key>canned-acl</key>
+                        <value>${s3.permissions.cannedacl}</value>
+                    </entry>
+                    <entry>
+                        <key>SSL Context Service</key>
+                    </entry>
+                    <entry>
+                        <key>Endpoint Override URL</key>
+                    </entry>
+                    <entry>
+                        <key>Signer Override</key>
+                        <value>Default Signature</value>
+                    </entry>
+                    <entry>
+                        <key>Multipart Threshold</key>
+                        <value>5 GB</value>
+                    </entry>
+                    <entry>
+                        <key>Multipart Part Size</key>
+                        <value>5 GB</value>
+                    </entry>
+                    <entry>
+                        <key>Multipart Upload AgeOff Interval</key>
+                        <value>60 min</value>
+                    </entry>
+                    <entry>
+                        <key>Multipart Upload Max Age Threshold</key>
+                        <value>7 days</value>
+                    </entry>
+                    <entry>
+                        <key>server-side-encryption</key>
+                        <value>None</value>
+                    </entry>
+                    <entry>
+                        <key>proxy-configuration-service</key>
+                    </entry>
+                    <entry>
+                        <key>Proxy Host</key>
+                    </entry>
+                    <entry>
+                        <key>Proxy Host Port</key>
+                    </entry>
+                    <entry>
+                        <key>proxy-user-name</key>
+                    </entry>
+                    <entry>
+                        <key>proxy-user-password</key>
+                    </entry>
+                </properties>
+                <runDurationMillis>0</runDurationMillis>
+                <schedulingPeriod>0 sec</schedulingPeriod>
+                <schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
+                <yieldDuration>1 sec</yieldDuration>
+            </config>
+            <executionNodeRestricted>false</executionNodeRestricted>
+            <name>PutS3Object</name>
+            <relationships>
+                <autoTerminate>true</autoTerminate>
+                <name>failure</name>
+            </relationships>
+            <relationships>
+                <autoTerminate>true</autoTerminate>
+                <name>success</name>
+            </relationships>
+            <state>RUNNING</state>
+            <style/>
+            <type>org.apache.nifi.processors.aws.s3.PutS3Object</type>
+        </processors>
+        <processors>
+            <id>cdf13c7b-f08f-35d5-0000-000000000000</id>
+            <parentGroupId>8aeae414-8380-347f-0000-000000000000</parentGroupId>
+            <position>
+                <x>773.6549324775438</x>
+                <y>288.58290850741616</y>
+            </position>
+            <bundle>
+                <artifact>nifi-hadoop-nar</artifact>
+                <group>org.apache.nifi</group>
+                <version>1.7.0.3.2.0.0-520</version>
+            </bundle>
+            <config>
+                <bulletinLevel>WARN</bulletinLevel>
+                <comments></comments>
+                <concurrentlySchedulableTaskCount>1</concurrentlySchedulableTaskCount>
+                <descriptors>
+                    <entry>
+                        <key>Hadoop Configuration Resources</key>
+                        <value>
+                            <name>Hadoop Configuration Resources</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>kerberos-credentials-service</key>
+                        <value>
+                            <identifiesControllerService>org.apache.nifi.kerberos.KerberosCredentialsService</identifiesControllerService>
+                            <name>kerberos-credentials-service</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>Kerberos Principal</key>
+                        <value>
+                            <name>Kerberos Principal</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>Kerberos Keytab</key>
+                        <value>
+                            <name>Kerberos Keytab</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>Kerberos Relogin Period</key>
+                        <value>
+                            <name>Kerberos Relogin Period</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>Additional Classpath Resources</key>
+                        <value>
+                            <name>Additional Classpath Resources</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>Directory</key>
+                        <value>
+                            <name>Directory</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>Conflict Resolution Strategy</key>
+                        <value>
+                            <name>Conflict Resolution Strategy</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>Block Size</key>
+                        <value>
+                            <name>Block Size</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>IO Buffer Size</key>
+                        <value>
+                            <name>IO Buffer Size</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>Replication</key>
+                        <value>
+                            <name>Replication</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>Permissions umask</key>
+                        <value>
+                            <name>Permissions umask</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>Remote Owner</key>
+                        <value>
+                            <name>Remote Owner</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>Remote Group</key>
+                        <value>
+                            <name>Remote Group</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>Compression codec</key>
+                        <value>
+                            <name>Compression codec</name>
+                        </value>
+                    </entry>
+                </descriptors>
+                <executionNode>ALL</executionNode>
+                <lossTolerant>false</lossTolerant>
+                <penaltyDuration>30 sec</penaltyDuration>
+                <properties>
+                    <entry>
+                        <key>Hadoop Configuration Resources</key>
+                        <value>/etc/hadoop/conf/core-site.xml</value>
+                    </entry>
+                    <entry>
+                        <key>kerberos-credentials-service</key>
+                    </entry>
+                    <entry>
+                        <key>Kerberos Principal</key>
+                    </entry>
+                    <entry>
+                        <key>Kerberos Keytab</key>
+                    </entry>
+                    <entry>
+                        <key>Kerberos Relogin Period</key>
+                        <value>4 hours</value>
+                    </entry>
+                    <entry>
+                        <key>Additional Classpath Resources</key>
+                    </entry>
+                    <entry>
+                        <key>Directory</key>
+                        <value>/tmp/nifi_test/</value>
+                    </entry>
+                    <entry>
+                        <key>Conflict Resolution Strategy</key>
+                        <value>replace</value>
+                    </entry>
+                    <entry>
+                        <key>Block Size</key>
+                    </entry>
+                    <entry>
+                        <key>IO Buffer Size</key>
+                    </entry>
+                    <entry>
+                        <key>Replication</key>
+                    </entry>
+                    <entry>
+                        <key>Permissions umask</key>
+                    </entry>
+                    <entry>
+                        <key>Remote Owner</key>
+                    </entry>
+                    <entry>
+                        <key>Remote Group</key>
+                    </entry>
+                    <entry>
+                        <key>Compression codec</key>
+                        <value>NONE</value>
+                    </entry>
+                </properties>
+                <runDurationMillis>0</runDurationMillis>
+                <schedulingPeriod>0 sec</schedulingPeriod>
+                <schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
+                <yieldDuration>1 sec</yieldDuration>
+            </config>
+            <executionNodeRestricted>false</executionNodeRestricted>
+            <name>PutHDFS</name>
+            <relationships>
+                <autoTerminate>true</autoTerminate>
+                <name>failure</name>
+            </relationships>
+            <relationships>
+                <autoTerminate>true</autoTerminate>
+                <name>success</name>
+            </relationships>
+            <state>RUNNING</state>
+            <style/>
+            <type>org.apache.nifi.processors.hadoop.PutHDFS</type>
+        </processors>
+    </snippet>
+    <timestamp>10/09/2018 14:11:54 UTC</timestamp>
+</template>
